@@ -17,7 +17,7 @@ public class App {
 		// 创建数据库连接
 		Connection conn = DriverManager.getConnection(
 				"jdbc:h2:tcp://localhost/~/test", "sa", null);
-		// 创建数据库操作方法
+		// 创建数据库操作类
 		Statement stmt = conn.createStatement();
 
 		// 执行删表语句
@@ -38,7 +38,7 @@ public class App {
 			System.out.println(rs.getString("NAME"));
 		}
 
-		// 关闭连接
+		// 关闭数据库连接
 		stmt.close();
 		conn.close();
 	}
