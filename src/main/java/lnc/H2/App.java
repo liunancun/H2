@@ -30,6 +30,7 @@ public class App {
 		stmt.executeUpdate("INSERT INTO T_USER VALUES(1, 'Hello')");
 		stmt.executeUpdate("INSERT INTO T_USER VALUES(2, 'World')");
 		stmt.executeUpdate("INSERT INTO T_USER VALUES(3, 'H2')");
+		stmt.executeUpdate("INSERT INTO T_USER VALUES(4, 'Git')");
 
 		// 执行查询语句
 		ResultSet rs = stmt.executeQuery("SELECT * FROM T_USER");
